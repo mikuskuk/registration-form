@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="mainform">
+        <h1 class="title">Registration form</h1>
+
+        <form>
+            <div class="name">
+                <label>First name <br>
+                    <input type="text" value="" placeholder="First Name" name="firstname" required minlength="3" maxlength="255">
+                </label>
+                <label>Last name <br>
+                    <input type="text" value="" placeholder="Last Name" name="lastname" required minlength="3" maxlength="255">
+                </label>
+            </div>
+
+            <div class="mailandpass">
+                <label>E-mail <br>
+                    <input type="email" value="" placeholder="E-mail" name="email" required>
+                </label>
+                <label>Password <br>
+                    <input type="password" value="" placeholder="Password" name="password" required minlength="8" maxlength="255">
+                </label>
+            </div>
+
+            <div class="gender">
+                <p>Gender</p>
+                <label> 
+                    <input type="radio" name="maleorfemale" value="male" required>
+                    Male
+                </label>
+                <br>
+                <label> 
+                    <input type="radio" name="maleorfemale" value="female" required>
+                    Female
+                </label>
+            </div>
+
+            <div class="country">
+                <label for="selectcountry">Where do you live?</label>
+                <br>
+                <select id="selectcountry" required>
+                    <option value="" disabled selected>Pick a country</option>
+                    <option value="latvia">Latvia</option>
+                    <option value="estonia">Estonia</option>
+                    <option value="lithuania">Lithuania</option>
+                </select>
+            </div>
+
+            <label>
+                <input type="checkbox" name="" id="" required>
+                I have agreed on <a href="#">terms and conditions</a>
+            </label>
+
+            <button type="submit">Submit</button>
+
+            <script src="/scripts.js"></script>
+        </form>
+    </main>
+    
+</body>
+</html>

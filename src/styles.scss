@@ -1,0 +1,120 @@
+body {
+  background-color: rgb(244, 229, 229);
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+.main {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: white;
+  width: 25%;
+  border: 5px solid black;
+  border-radius: 43px;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name, .mailandpass {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.name input, .mailandpass input {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.gender {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.gender p {
+  margin-bottom: 5px;
+}
+
+.country {
+  margin-bottom: 15px;
+}
+
+.country select {
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(244, 229, 229);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 30%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.js-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .name, .mailandpass {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .name input, .mailandpass input {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .name label, .mailandpass label {
+    padding: 1px 0px;
+  }
+
+  button {
+    width: 40%;
+    margin-top: 15px;
+  }
+  
+}
