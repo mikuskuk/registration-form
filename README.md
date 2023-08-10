@@ -1,4 +1,4 @@
-# html_ts_boilerplate
+# Registration form
 To start coding open your terminal and write
 ```
 npm i
